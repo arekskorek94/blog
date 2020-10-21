@@ -1,0 +1,123 @@
+@import "../../scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.body {
+  color: $black;
+  background: $grey;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  background: $white;
+  border-radius: $standardRadius;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.person {
+  display: flex;
+  align-items: flex-start;
+}
+
+.blog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.person__photo {
+  max-width: 120px;
+  max-height: 170px;
+  border-radius: $standardRadius;
+  margin-right: 20px;
+}
+
+.person__name {
+  margin: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 20px;
+  color: $grey;
+}
+
+.person__position {
+  margin: 0;
+  font-size: 12px;
+  color: $grey;
+  font-style: italic;
+}
+
+.person__description {
+  color: $grey;
+
+  &--highlight {
+    color: $yellow;
+  }
+}
+
+.person__socialMedia {
+  color: $grey;
+
+  &--link {
+    color: $yellow;
+    text-decoration: none;
+  }
+}
+
+.blog__link{
+  text-align: center;
+  max-width: 150px;
+  padding-top:  20px;
+  padding-bottom: 5px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $yellow;
+  border-radius: $standardRadius;
+  text-decoration: none;
+  transition: background .6s linear;
+  color: $yellow;
+  &--text{
+    font-size: 20px;
+
+  }
+  &:hover {
+    background: $yellow;
+    color: $grey;
+  }
+}
+
+.blog__description--text{
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 500px) {
+  .person__name{
+  line-height: 35px;
+  }
+  body{
+    padding: 5px;
+  }
+  .person {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}

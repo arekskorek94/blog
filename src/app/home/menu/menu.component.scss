@@ -1,0 +1,59 @@
+@import "../../../scss/variables";
+
+.navigation {
+  background-color: $white;
+  position: fixed;
+  margin: 0;
+  min-height: 50px;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 8px 4px -6px black;
+  border-radius: 0 0 6px 6px;
+  z-index: 99;
+  &__list {
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+
+      &__item {
+          box-sizing: border-box;
+          color: $linkColor;
+          text-decoration: none;
+          padding: 10px;
+          &:hover {
+              background-color: $linkHoverColor;
+              border-radius: $standardRadius;
+          }
+      }
+  }
+}
+
+.navigation__button {
+  background-color: transparent;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 0;
+
+  &--line {
+      fill: none;
+      stroke: $grey;
+      stroke-width: 4;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+          stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &--line1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+  }
+  &--line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 6;
+  }
+  &--line3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+  }
+}
