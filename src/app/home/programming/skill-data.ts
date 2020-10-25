@@ -8,58 +8,44 @@ export class SkillData implements InMemoryDbService{
       {
         'id': 1,
         'skillName': 'C#',
-        'knowledgeDate': 'March 19, 2019',
-        'description': 'c# oraz .net frameworka używam codziennie w pracy',
-        'level': 4
+        'knowledgeDate': 'Grudzień 2018',
+        'description': 'C# używam od 2018 roku, jest to podstawowy język programowania w moim zespole.',
+        'level': 3.8
       },
       {
         'id': 2,
         'skillName': 'EF',
-        'knowledgeDate': 'March 22, 2018',
-        'description': 'Jakoś tam jest,Jakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jestJakoś tam jest',
-        'level': 3.2
+        'knowledgeDate': 'Styczeń 2020',
+        'description': 'Podczas pierwszego projektu w RazorPages rozpocząłem swoją przygodę z Entity Frameworkiem. ',
+        'level': 3
       },
       {
         'id': 3,
         'skillName': 'Angular',
-        'knowledgeDate': 'March 19, 2020',
-        'description': 'Coś tam potrafie.',
-        'level': 5
+        'knowledgeDate': 'Październik, 2020',
+        'description': 'W frontendowych frameworkach dopiero zaczynam komercyjnie swoją przygodę. Rozwój w Angularzę rozpocząłem na II roku studiów.',
+        'level': 2
       },
       {
         'id': 4,
-        'skillName': 'Angular',
-        'knowledgeDate': 'March 19, 2020',
+        'skillName': '.net Core 3',
+        'knowledgeDate': 'Styczeń 2020',
         'description': 'Coś tam potrafie.',
-        'level': 5
-      },
-      {
-        'id': 5,
-        'skillName': 'Angular',
-        'knowledgeDate': 'March 19, 2020',
-        'description': 'Coś tam potrafie.',
-        'level': 5
+        'level': 3.1
       },
       {
         'id': 6,
-        'skillName': 'Angular',
-        'knowledgeDate': 'March 19, 2020',
-        'description': 'Coś tam potrafie.',
-        'level': 5
+        'skillName': 'MVP',
+        'knowledgeDate': 'Grudzień 2018',
+        'description': 'Używam przy programowaniu w Winformsowej aplikacji.',
+        'level': 3.5
       },
       {
         'id': 7,
-        'skillName': 'Angular',
-        'knowledgeDate': 'March 19, 2020',
-        'description': 'Coś tam potrafie.',
-        'level': 5
-      },
-      {
-        'id': 8,
-        'skillName': 'Angular',
-        'knowledgeDate': 'March 19, 2020',
-        'description': 'Coś tam potrafie.',
-        'level': 5
+        'skillName': 'WinForm',
+        'knowledgeDate': 'Grudzień 2018',
+        'description': 'Pierwsza aplikacja podczas komercyjnych projektów.',
+        'level': 3.5
       }
     ];
     return { skills };

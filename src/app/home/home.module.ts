@@ -7,6 +7,7 @@ import { HomeContentComponent } from './home-content/home-content.component';
 import { RouterModule } from '@angular/router';
 import { SkillListComponent } from './programming/skill-list/skill-list.component';
 import { SkillDetailComponent } from './programming/skill-detail/skill-detail.component';
+import { StarComponent } from '../shared/star/star.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SkillDetailComponent } from './programming/skill-detail/skill-detail.co
     ProgrammingComponent,
     HomeContentComponent,
     SkillListComponent,
-    SkillDetailComponent
+    SkillDetailComponent,
+    StarComponent
   ],
   imports: [
     CommonModule,

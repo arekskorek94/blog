@@ -22,10 +22,10 @@
     </div>
     <div class="item">
       <div class="item__title">
-        <h3>Poziom</h3>
+        <h3>Poziom<span class="glyphicon glyphicon-star"></span></h3>
       </div>
       <div class="item__content">
-        <p>{{skill.level}}</p>
+        <app-star [rating]='skill.level'></app-star>
       </div>
     </div>
     <div class="item">
