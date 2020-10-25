@@ -1,0 +1,45 @@
+@import "../../../../scss/variables";
+
+.card{
+  background-color: $cardContent;
+  border: 0.5px solid $lightGrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.card-header{
+  color: $grey;
+  &__text{
+    margin: 0;
+    text-align: center;
+  }
+
+}
+
+.card-body{
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 0.5px solid $linkHoverColor;
+  background-color: $white;
+  border-radius: 5px;
+}
+.item{
+  // border-bottom: 0.5px solid $linkHoverColor;
+  margin-bottom: 10px;
+}
+
+.item__title{
+  // padding: 5px;
+  color: $yellow;
+}
+
+.item__title > *{
+  margin: 0;
+}
+
+.item__content > *{
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 20px;
+}

@@ -1,13 +1,11 @@
-
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HomeContentComponent } from './home/home-content/home-content.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes =
 [
-  { path: 'landing', component: LandingPageComponent },
-  { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
-  { path: '', redirectTo: 'landing', pathMatch: 'full'}
+  { path: 'home', component: HomeContentComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 
 @NgModule({
