@@ -1,5 +1,55 @@
 @import "../../../scss/variables";
 
+.header{
+  display: flex;
+  align-items: flex-start;
+}
+
+.portrait{
+  max-width: 210px;
+  max-height: 250px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.experience{
+  &__name{
+    margin: 0;
+    line-height: 22px;
+  }
+
+  &__position{
+    font-size: 15px;
+    margin-left: 2px;
+    @extend .highlight;
+  }
+}
+.experience__content{
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.experience__about{
+  max-width: 350px;
+  width: 100%;
+  text-align: justify;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 3px solid $yellow;
+}
+
+.experience__skill{
+  max-width: 350px;
+  width: 100%;
+}
+
+.skill{
+  &__header{
+    text-align: center;
+  }
+}
+
 .skill__content {
   color: $grey;
   display: grid;

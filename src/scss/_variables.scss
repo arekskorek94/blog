@@ -27,3 +27,14 @@ $cardContent: #fdfffc;
 .grey{
     color: #a9a5a9;
 }
+
+.card{
+  background-color: $cardContent;
+  border: 0.5px solid $lightGrey;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.highlight {
+  color: $yellow;
+}

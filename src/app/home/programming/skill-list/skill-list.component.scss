@@ -40,10 +40,10 @@
   box-sizing: border-box;
   border: 0.5px solid $linkHoverColor;
   background-color: $white;
-  max-width: 190px;
+  max-width: 165px;
   width: 100%;
   height: 50px;
-  margin: 1px 0;
+  margin: 1px auto;
   color: $grey;
   font-weight: bold;
 
@@ -51,5 +51,28 @@
   border-radius: 5px;
   &:hover{
     background-color: $linkHoverColor;
+    animation: btnAnimate 0.3s linear alternate forwards;
+  }
+}
+
+.active {
+  background-color: $linkHoverColor;
+  max-width: 170px;
+  width: 100%;
+  height: 60px;
+  border: .02px groove $grey;
+}
+
+@keyframes btnAnimate {
+  0%{
+    max-width: 165px;
+    width: 100%;
+    height: 50px;
+  }
+  100%{
+    max-width: 170px;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
   }
 }
